@@ -1,0 +1,18 @@
+/* خاص بالصفحة الرئيسية (مؤقتة: تعرض بيانات الحساب المحفوظة) */
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);
+  font-family:"Readex Pro",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;line-height:1.6}
+header{padding:20px 24px 0;text-align:center}
+header img{width:min(34vw,130px);height:auto}
+main{max-width:440px;margin:0 auto;padding:12px 24px calc(40px + env(safe-area-inset-bottom,0px))}
+h1{margin:8px 0 4px;font-size:1.6rem;color:var(--green);text-align:center}
+.sub{margin:0 0 20px;text-align:center;color:var(--muted);font-size:.95rem}
+.card{margin:0;background:var(--field);border:1.5px solid var(--line);border-radius:14px;padding:4px 18px}
+.card div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.card div:last-child{border-bottom:0}
+dt{color:var(--muted);font-size:.92rem}
+dd{margin:0;font-weight:600;text-align:end}
+.note{margin:14px 2px 22px;color:var(--muted);font-size:.85rem;text-align:center}
+.out{width:100%;border:1.5px solid var(--maroon);background:transparent;color:var(--maroon);font:inherit;font-weight:600;
+  padding:13px;border-radius:12px;cursor:pointer}
+.out:hover{background:var(--maroon);color:#fff}
+.out:focus-visible{outline:3px solid var(--gold);outline-offset:2px}

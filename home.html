@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A6640">
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/home.css">
+<title>الرئيسية — وسيلة</title>
+</head><body>
+<header><img src="assets/logo.svg" alt="شعار وسيلة"></header>
+<main>
+  <h1 id="hello">أهلاً بك</h1>
+  <p class="sub">حسابك جاهز. هنا بياناتك المحفوظة على هذا الجهاز:</p>
+  <dl class="card">
+    <div><dt>الاسم</dt><dd id="uName"></dd></div>
+    <div><dt>رقم الهاتف</dt><dd id="uPhone" dir="ltr"></dd></div>
+    <div><dt>نوع الحساب</dt><dd id="uRole"></dd></div>
+    <div><dt>تاريخ إنشاء الحساب</dt><dd id="uCreated"></dd></div>
+    <div><dt>آخر دخول</dt><dd id="uLast"></dd></div>
+  </dl>
+  <p class="note" id="note"></p>
+  <button class="out" id="logout" type="button">تسجيل الخروج</button>
+</main>
+<script src="js/store.js"></script>
+<script src="js/home.js"></script>
+</body></html>

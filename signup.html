@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A6640">
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/auth.css">
+<link rel="stylesheet" href="css/signup.css">
+<title>إنشاء حساب — وسيلة</title>
+</head><body>
+<main>
+  <img class="logo" src="assets/logo.svg" alt="شعار وسيلة">
+  <div class="stagger">
+    <h1>إنشاء حساب</h1>
+    <p class="sub">دقيقة واحدة وتبدأ مشاويرك مع وسيلة.</p>
+
+    <form id="signup" novalidate>
+      <div class="field">
+        <label for="name">الاسم الكامل</label>
+        <div class="box" id="nameBox">
+          <input id="name" name="name" type="text" autocomplete="name" aria-describedby="nameErr" required>
+        </div>
+        <p class="msg" id="nameErr" role="alert"></p>
+      </div>
+
+      <div class="field">
+        <label for="phone">رقم الهاتف</label>
+        <div class="box ltr" id="phoneBox">
+          <span class="prefix" dir="ltr" aria-hidden="true">&#43;249</span>
+          <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="9XX XXX XXX" aria-describedby="phoneErr" required>
+        </div>
+        <p class="msg" id="phoneErr" role="alert"></p>
+      </div>
+
+      <div class="field">
+        <label for="pass">كلمة المرور</label>
+        <div class="box" id="passBox">
+          <input id="pass" name="password" type="password" autocomplete="new-password" aria-describedby="passErr" required>
+          <button type="button" class="toggle" id="toggle" aria-controls="pass pass2" aria-pressed="false">إظهار</button>
+        </div>
+        <p class="msg" id="passErr" role="alert"></p>
+      </div>
+
+      <div class="field">
+        <label for="pass2">تأكيد كلمة المرور</label>
+        <div class="box" id="pass2Box">
+          <input id="pass2" name="password2" type="password" autocomplete="new-password" aria-describedby="pass2Err" required>
+        </div>
+        <p class="msg" id="pass2Err" role="alert"></p>
+      </div>
+
+      <fieldset class="field roles">
+        <legend>نوع الحساب</legend>
+        <label class="role"><input type="radio" name="role" value="rider" checked><span>راكب<small>أطلب ركشة</small></span></label>
+        <label class="role"><input type="radio" name="role" value="driver"><span>سائق ركشة<small>أستقبل الطلبات</small></span></label>
+      </fieldset>
+
+      <div class="field">
+        <label class="terms" for="terms"><input id="terms" type="checkbox" aria-describedby="termsErr"><span>أوافق على شروط استخدام وسيلة وسياسة الخصوصية</span></label>
+        <p class="msg" id="termsErr" role="alert"></p>
+      </div>
+
+      <div class="submit-wrap">
+        <button class="cta" id="submit" type="submit">إنشاء الحساب</button>
+        <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <p>عندك حساب؟</p>
+  <a class="ghost" href="login.html">تسجيل الدخول</a>
+</footer>
+
+<script src="js/store.js"></script>
+<script src="js/signup.js"></script>
+</body></html>
